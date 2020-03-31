@@ -7,13 +7,13 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>HOW LUCKY ARE YOU?</title>
 </head>
 <body>
   
   <div class="container">
-    <form id="fortune_quiz">
-      <div class="form_group">
+    <form id="fortune-quiz">
+      <div class="form-group">
         <h1>Check all that apply</h1>
         <p>Which Zodiac type are you</p>
         <input type="checkbox" name="zodiac" value="fire"> Fire sign <br>
@@ -31,7 +31,8 @@
         <input type="checkbox" name="good" value="penny"> Found a penny <br>
         <input type="checkbox" name="good" value="rabbit"> Found a rabbit's foot <br>
       </div>
-
+      <br>
+      <br>
       <div class="form_group">
         <p>Which unlucky events have you experienced this year?</p>
         <input type="checkbox" name="bad" value="salt"> Spilled salt <br>
@@ -41,8 +42,24 @@
         <input type="checkbox" name="bad" value="umbrella"> Opened an umbrella while indoors<br>
       </div>
 
-      <button type="submit" class="btn">SubmiIIiiit</button>
+      <button type="submit" class="btn">✨SubmiIIiiit✨</button>
     </form>
+
+    <span id="lucky">
+      <h3>YOU'RE SO LUCKY!</h3>
+      <p><em>RESULTS HERE</em></p></span>
+
+    <span id="unlucky">
+      <h3>YOU'RE PROBABLY GOING TO DIE!</h3>
+      <p><em>RESULTS HERE</em></p>
+    </span>
+
+    <span id="mysterious">
+      <h3>OUTCOME IS LEFT TO CHANCE!</h3>
+      <p><em>RESULTS Y'ALL</em></p>
+    </span>
+
+    <span id="UI"></span>
   </div>
   
 </body>

@@ -1,10 +1,16 @@
 $(document).ready(function() {
   $('form#fortune-quiz').submit(function(event) {
     event.preventDefault();
-    $("#zodiac").show();
-    $("input:checkbox[name=zodiac]:checked").each(function(){
+    $('#UI').show();
+    $('input:checkbox[name=zodiac]:checked').each(function() {
       var zodiacSign = $(this).val();
-      $('#zodiac').append(zodiacSign + '<br>');
+      $('#UI').append(zodiacSign + '<br>');
+    
+    var result;
+
+    if (zodiacSign === 'fire') {
+      result = $('#lucky').show();
+    }
     });
     $('#fortune-quiz').hide();
   });
